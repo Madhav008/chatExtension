@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+        <div class="header">
+            <div class="joinroom active">
+                <label> Username</label>
+                <input type="text" class="username">
+                <button id="join">Join</button>
+            </div>
+            <div class="exitroom active">
+                <button id="exit">Exit</button>
+            </div>
+        </div>
+    <section class="msger">
+        <header class="msger-header">
+            <div class="msger-header-title">
+                <i class="fas fa-comment-alt"></i> SimpleChat
+            </div>
+            <div class="msger-header-options">
+                <span><i class="fas fa-cog"></i></span>
+            </div>
+        </header>
+
+        <main class="msger-chat">
+            <div class="msg left-msg">
+
+            </div>
+
+            <div class="msg right-msg">
+
+
+            </div>
+        </main>
+
+        <form class="msger-inputarea">
+            <input type="text" class="msger-input" placeholder="Enter your message...">
+            <button type="submit" class="msger-send-btn">Send</button>
+        </form>
+    </section>
+
+
+    <script src="scripts/socket.io.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>
